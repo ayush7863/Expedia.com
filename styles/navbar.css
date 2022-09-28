@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+nav .wrapper{
+    background-color:red;
+    max-width:1250px;
+    padding:0 30px;
+    margin:auto;
+
+}
+.wrapper .logo a{
+    color:#fff;
+    text-decoration:none;
+}
+.nav-links li a{
+    color:#fff;
+    text-decoration:none;
+}
