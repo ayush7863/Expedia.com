@@ -3,6 +3,10 @@ let nav_div=document.getElementById("navbar")
 nav_div.innerHTML=navbar()
 
 
+import footer from '../components/footer.js'
+let footer_div=document.getElementById('footer')
+footer_div.innerHTML=footer();
+
 let btn=document.getElementById('btn-1')
 
 
