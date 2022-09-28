@@ -1,0 +1,78 @@
+#top{
+    margin-top: 100px;
+    border: 0px solid red;
+    height: 100px;
+    width: 100%;
+}
+#bottom{
+    border: 1px solid red;
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(244, 243, 240);
+}
+#top1{
+    border: 0px solid teal;
+    width: 70%;
+    margin-left: 4%;
+}
+#top1>span{
+    color: rgb(48, 48, 252);
+    margin-right: 3%;
+}
+#top2{
+    border: 0px solid green;
+    margin-left: 4%;
+    margin-top: 5px;
+}
+#top2>input{
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 60px 10px 20px 
+}
+#top2>#to{
+    margin-left: 1%;
+    margin-right:1% ;
+}
+#searchBtn{
+    border-radius: 8px;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(83, 83, 227);
+    color: white;
+    border: none;
+}
+#bottom{
+    display: flex;
+}
+#bottom1{
+    width: 20%;
+    border: 2px solid green;
+}
+#bottom2{
+    width: 60%;
+    border: 2px solid green;
+}
+#bottom2>div{
+    display: flex;
+}
+#bottom2>div>div>p{
+    font-size: 13px;
+    margin-left: 5px;
+}
+#bottom3{
+    width: 20%;
+    border: 2px solid green;
+}
+#bottom3>img{
+    margin-left: 30%;
+}
+#f1,#f2,#f3{
+    display: flex;
+    justify-content: space-between;
+}
+.check{
+    font-size: 17px;
+    
+    
+}
+
