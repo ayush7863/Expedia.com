@@ -1,0 +1,82 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+
+h1{
+    font-family:  sans-serif;
+}
+h2{
+    font-family:  sans-serif;
+}
+#email{
+    height: 42px;
+    border-style: ridge;
+    margin-bottom: 12px;
+    border-radius: 9px;
+}
+#email:hover, #password:hover{
+    border-color: rgb(231, 124, 124);
+    /* cursor: pointer; */
+}
+#password{
+    height: 42px;
+    /* background-color: aqua; */
+    /* margin: auto; */
+    
+    border-style: ridge;
+    margin-bottom: 12px;
+    border-radius: 9px;
+}
+#pone{
+    font-family: ui-monospace;
+}
+#ptwo{
+    font-family:  sans-serif;
+    font-size: x-small;
+    font-weight: 100;
+}  
+#pthree{
+    font-family:  sans-serif;
+    font-size: small;
+    font-weight: 500;
+
+}  
+#submit{
+    height: 46px;
+    border-style: none;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    font-size: 18px;
+    color: black;
+    background-color: rgb(35, 140, 239);
+    color: aliceblue;
+}
+#submit:hover{
+    cursor: pointer;
+}
+#forget{
+    text-align: center;
+    text-decoration: none;
+    font-family:  sans-serif;
+
+}
+#pfour{
+    text-align: center;
+    font-family:  sans-serif;
+    
+}
+img{
+    width: 20%;
+    height: 30px;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
