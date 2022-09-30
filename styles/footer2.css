@@ -1,0 +1,53 @@
+#footer{
+     position:relative;
+    top:3200px;
+    left:220px;
+     border-bottom:1px solid black;
+    width:74%;
+    height:350px;
+
+}
+
+
+footer>#section-6{
+    display:flex;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+}
+footer>#section-6>div{
+    border:0px solid black;
+    width:100%;
+    height:380px;
+    
+    
+}
+footer>#section-6>div>h5>a{
+    text-decoration:none; 
+    color:blue;
+
+}
+footer>#section-6>div:nth-child(1)>img{
+    padding-top:18px;
+
+}
+#section-7{
+    border:0px solid black;
+    width:74%;
+    height:200px;
+    position:absolute;
+
+    
+    left:180px;
+    text-align:center;
+
+}
+#section-7>div>img{
+    width:300px;
+    height:100px;
+
+}
+#anchor:hover{
+    color:blue;
+    
+}
+
