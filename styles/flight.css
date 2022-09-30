@@ -1,78 +1,163 @@
+
 #top{
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-left: 15px;
+
     border: 0px solid red;
-    height: 100px;
-    width: 100%;
 }
-#bottom{
-    border: 1px solid red;
-    height: 1000px;
-    width: 100%;
-    background-color: rgb(244, 243, 240);
+.top11{
+    border: 0px;
+    outline: 0px;
+   padding: 20px;
+   font-size: 18px;
+   color: blue;
+   
 }
-#top1{
-    border: 0px solid teal;
-    width: 70%;
-    margin-left: 4%;
-}
-#top1>span{
-    color: rgb(48, 48, 252);
-    margin-right: 3%;
+.top11:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(70, 70, 199);
+
 }
 #top2{
-    border: 0px solid green;
-    margin-left: 4%;
-    margin-top: 5px;
+    border: 0px solid teal;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
-#top2>input{
-    
+.ft{
+    border-radius: 10px;
+    padding: 1% 7% 1.2% 2% ;
+    border-color: 1px solid black;
+    font-size: 20px;
+}
+#top2>span{
+
+    font-size: 30px;
+    color: rgb(70, 70, 199);
+    padding: 15px;
+    border-radius:50%;
+
+}
+#top2>span:hover{
+    background-color:rgb(216, 216, 251)
+}
+#date{
     border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px 60px 10px 20px 
+    font-size: 20px;
+    padding: 1% 3% 1.2% 2% ;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-#top2>#to{
-    margin-left: 1%;
-    margin-right:1% ;
-}
-#searchBtn{
-    border-radius: 8px;
-    padding: 10px 15px 10px 15px;
-    background-color: rgb(83, 83, 227);
+#search{
+    font-size: 20px;
+    padding: 1.3% 2% 1.2% 2% ;
+    border-radius: 10px;
+    border: 0px;
+    outline: 0px;
+    background-color: rgb(70, 70, 199);
     color: white;
-    border: none;
+}
+#search:hover{
+    background-color: rgb(37, 37, 150);
 }
 #bottom{
     display: flex;
+    margin-top: 30px;
+    border: 0px solid teal;
+    height: 1000px;
+    background-color:rgb(241, 238, 238)
+    
 }
-#bottom1{
+#bt1{
     width: 20%;
-    border: 2px solid green;
+    border: 0px solid black;
+    margin-top: 30px;
+    margin-left: 30px;
 }
-#bottom2{
-    width: 60%;
-    border: 2px solid green;
-}
-#bottom2>div{
-    display: flex;
-}
-#bottom2>div>div>p{
-    font-size: 13px;
-    margin-left: 5px;
-}
-#bottom3{
-    width: 20%;
-    border: 2px solid green;
-}
-#bottom3>img{
-    margin-left: 30%;
-}
-#f1,#f2,#f3{
+#bt1>div{
     display: flex;
     justify-content: space-between;
 }
-.check{
-    font-size: 17px;
-    
-    
+#bt2{
+    width: 70%;
+    border: 0px solid black;
+    margin-top: 50px;
+    margin-right: 50px;margin-left: 50px;
+
+
+}
+#bt3{
+    width: 10%;
+    border: 0px solid black;
+    margin-top: 30px;
+    margin-right: 10px;
+
 }
 
+#bt1>div>div>input{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#bt1>div>div>span{
+    font-size: 18px;
+    border: 0px solid red;
+    margin-top: 10px;
+
+}
+#bt2>div{
+    display: flex;
+}
+#bt2>div>div>select{
+    font-size: 19px;
+    border-radius: 10px;
+    padding: 10px 150px 30px 5px ;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+#variable{
+    border: 0px solid green;
+    display: flex;
+    flex-direction:column
+}
+.card{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 110px  
+}
+.card>div{
+    margin: 15px;
+    border: 0px solid brown;
+    width: 30%;
+
+}
+.card>div>h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.card>div>p{
+    font-size: 13px;
+}
+.card>div>div>img{
+    width: 20px;
+    margin-right: 7px;
+}
+.card>div>div{
+    border: 0px solid teal;
+    display: flex;
+    margin-top: -15px;
+}
+#prc{
+    text-align: right;
+}
+.card>div>h1{
+    border: 0px solid black;
+    margin-top: -5px;
+
+
+}

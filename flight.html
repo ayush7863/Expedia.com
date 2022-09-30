@@ -6,91 +6,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/c3695f78cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/flight.css">
     <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 
 <body>
-    <div id="navbar"></div>
     <div id="top">
         <div id="top1">
-            <span>One Way </span>
-            <span>1traveler</span>
-            <span>economy</span>
-            <span>any airlines</span>
-            <span>moreactions</span>
+            <select class="top11">
+                <option value="">One way</option>
+                <option value="">Return</option>
+                <option value="">Multi-city</option>
+            </select>
+            <select class="top11">
+                <option value="">1traveler</option>
+
+            </select>
+            <select class="top11">
+                <option value="">Economy</option>
+                <option value="">premium</option>
+                <option value="">Multi-city</option>
+            </select>
+            <select class="top11">
+                <option value="">Any airline</option>
+                <option value="">Return</option>
+                <option value="">Multi-city</option>
+            </select>
+            <select class="top11">
+                <option value="">More options</option>
+                <option value="">Return</option>
+                <option value="">Multi-city</option>
+            </select>
+
+
         </div>
+
         <div id="top2">
-            <input id="from" placeholder="Flying From" type="text">
-
-
-            <input id="to" placeholder="Flying To" type="text">
+            <!--ft means from to -->
+            <input class="ft" placeholder="flying from" type="text">
+            <span>&#8644;</span>
+            <input class="ft" placeholder="flying to" type="text">
             <input id="date" type="date">
-            <button id="searchBtn">Search</button>
+            <button id="search">Search</button>
         </div>
     </div>
+
     <div id="bottom">
-        <div id="bottom1">
-            <h3>Filter by</h3>
-            <div id="f1">
-                <div class="f1stops">
-                    <h4>Stops</h4>
-                    <p> <span class="check">&#9744</span> Direct(1)</p>
-                    <p><span class="check">&#9744</span> 1 stop(2)</p>
-
-                </div>
-                <div class="f1from">
-                    <h4>From</h4>
-                    <p> &#x20b9;7,526</p>
-                    <p>&#x20b9;6,950</p>
-                </div>
-            </div>
-            <div id="f2">
-                <div class="f1stops">
-                    <h4>Airlines</h4>
-                    <p><span class="check">&#9744</span> Indigo(1)</p>
-                    <p><span class="check">&#9744</span> Spice jet(2)</p>
-
-                </div>
-                <div class="f1from">
-                    <h4>From</h4>
-                    <p> &#x20b9;7,526</p>
-                    <p>&#x20b9;6,950</p>
-                </div>
-            </div>
-            <div id="f3">
-                <div class="f1stops">
-                    <p><span class="check">&#9744</span> Travel and baggage</p>
-                    <p><span class="check">&#9744</span> Hand baggage </p>
-                </div>
-                <div class="f1from">
-                    <h4>From</h4>
-                    <p> &#x20b9;7,526</p>
-                </div>
-            </div>
-        </div>
-        <div id="bottom2">
+        <!--bt1 stands for bottom 1 and so on-->
+        <div id="bt1">
+            <h2>Filter by</h2>
             <div>
                 <div>
-                    <p>Prices displayed include taxes and may
-                        change based on availability. You can review any
-                        additional fees before checkout. Prices are not final
-                        until you complete your purchase.</p>
+                    <p>Stops</p>
+                    <input type="checkbox"><span> Direct (4)</span><br>
+                    <input type="checkbox"><span> 1 stop (16)</span>
                 </div>
                 <div>
+                    <p>From</p>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                </div>
+            </div>
+
+            <p>Airlines</p>
+            <div>
+                <div>
+                    <input type="checkbox"><span> Air Canada (7)</span><br>
+                    <input type="checkbox"><span> United (7)</span><br>
+                    <input type="checkbox"><span> Emirates (2)</span><br>
+                    <input type="checkbox"><span> Air India (1)</span><br>
+
+                </div>
+                <div>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                    <p> <span>&#x20B9;</span>298,494</p>
+
+                </div>
+            </div>
+
+            <p>Travel and baggage</p>
+            <div>
+                <div>
+                    <input type="checkbox"><span> Seat choice included</span><br>
+                    <input type="checkbox"><span> Hand baggage included</span><br>
+                </div>
+                <div>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                    <p> <span>&#x20B9;</span>298,494</p>
+                </div>
+            </div>
+
+            <p>Departure time in New York</p>
+
+
+
+
+        </div>
+        <div id="bt2">
+            <div id="fix">
+                <div>
+                    <p>Prices displayed include taxes and may change
+                        based on availability. You can review any additional
+                        fees before checkout. Prices are not final until you
+                        complete your purchase.</p>
+                </div>
+
+                <div>
                     <select name="" id="">
-                        <option value="">Price(lowest)</option>
-                        <option value="">Price(Highest)</option>
+                        <option value="">Sort by</option>
                     </select>
                 </div>
             </div>
-            <div></div>
-        </div>
 
-        <div id="bottom3">
-            <img src="https://tpc.googlesyndication.com/simgad/680227074443010515?" alt="">
+            <div id="variable">
+                <div class="card">
+                    <div>
+                        <h3>18:15 - 19:55</h1>
+                        <p>Delhi (DEL) - Patna(PAT)</p>
+                        <div>
+                            <img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg" alt="">
+                             <p>Vistara</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        1h 40m (Direct)
+                    </div>
+
+                    <div id="prc">
+                        <h1>₹5,116</h1>
+                        <p>one way for 1 traveller</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <h3>18:15 - 19:55</h1>
+                        <p>Delhi (DEL) - Patna(PAT)</p>
+                        <div>
+                            <img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg" alt="">
+                             <p>Vistara</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        1h 40m (Direct)
+                    </div>
+
+                    <div id="prc">
+                        <h1>₹5,116</h1>
+                        <p>one way for 1 traveller</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>18:15 - 19:55</h1>
+                        <p>Delhi (DEL) - Patna(PAT)</p>
+                        <div>
+                            <img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg" alt="">
+                             <p>Vistara</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        1h 40m (Direct)
+                    </div>
+
+                    <div id="prc">
+                        <h1>₹5,116</h1>
+                        <p>one way for 1 traveller</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>18:15 - 19:55</h1>
+                        <p>Delhi (DEL) - Patna(PAT)</p>
+                        <div>
+                            <img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg" alt="">
+                             <p>Vistara</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        1h 40m (Direct)
+                    </div>
+
+                    <div id="prc">
+                        <h1>₹5,116</h1>
+                        <p>one way for 1 traveller</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h3>18:15 - 19:55</h1>
+                        <p>Delhi (DEL) - Patna(PAT)</p>
+                        <div>
+                            <img src="https://images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/UK_sq.svg" alt="">
+                             <p>Vistara</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        1h 40m (Direct)
+                    </div>
+
+                    <div id="prc">
+                        <h1>₹5,116</h1>
+                        <p>one way for 1 traveller</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div id="bt3">
+            <img src="https://tpc.googlesyndication.com/simgad/17447823249981941085?" alt="">
         </div>
     </div>
+
+
 
 </body>
 
