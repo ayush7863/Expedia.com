@@ -1,0 +1,190 @@
+#container>#section-1{
+    border:1px  solid black;
+    width:72%;
+    height:280px;    
+    position:absolute;
+    top:100px;  
+    left:220px;   
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+   
+    
+
+
+}
+#container>#section-1>div{
+    border:0px solid black;
+    width:85%;
+    height:100%;
+    margin:auto;
+    padding-right: 10px;
+    
+}
+#container>#section-1>div:nth-child(2){
+    width:1900px;
+}
+#container>#section-1>div>img{
+    width:100%;
+    height:100%;
+}
+#selectcountry{
+    width:90px;
+    height:40px;
+    margin-right: 10px;
+}
+#phone{
+    width:130px;
+    height:34px;
+    margin-right: 10px;
+}
+#btn-1{
+    width:150px;
+    height:40px;
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:10px;
+}
+
+#section-1>#div-2>h2{
+    line-height:0px;
+}
+#section-1>#div-2>.para{
+    font-size:13px;
+}
+#btn-2>a{
+    color:white;
+    text-decoration:none;
+}
+#section-2{
+    border:2px solid black;
+    width:72%;
+    height:400px;
+    position:absolute;
+    top:400px;
+    left:220px;
+    background:url('https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg') no-repeat center center/cover;
+    border-radius:16px;
+   
+}
+#section-2>div{
+    border:0px solid white;
+    width:400px;
+    position:absolute;
+    top:100px;
+    color:white;
+    text-align:center;
+    
+}
+#section-2>div>h2{
+    font-weight:600;
+    font-size:30px;
+}
+#section-2>div>p{
+    font-weight:bold;
+}
+#section-2>div>button{
+    background-color:blue;
+    width:200px;
+    font-size:20px;
+    height:50px;
+    color:white;
+    text-align:center; 
+    border-radius:10px;
+    border:none;
+}
+#section-3{
+    border:1px solid black;     
+    width:72%;
+    height:200px;
+    position:absolute;
+    top:900px;
+    left:220px;
+    border-radius:10px;
+}
+#section-3>div{
+    display:flex;
+
+}
+#section-3>div>div{
+    border:0px solid black;
+    
+    height:200px;
+
+}
+#section-3>div>div:nth-child(1){
+    width:100%;
+    height:200px;
+}
+#section-3>div>div:nth-child(1)>a>img{
+    width:100%;
+    height:100%;
+   
+}
+#section-3>div>div:nth-child(2){
+    width:70%;
+    height:200px;
+    padding-left:20px;
+}
+#section-3>div>div:nth-child(2)>img{
+   
+    padding-top:30px;
+}
+#section-3>div>div:nth-child(2)>p{
+    font-size:15px;
+    
+
+}
+#section-4{
+    border:0px solid black;     
+    width:72%;
+    height:280px;
+    position:absolute;
+    top:1200px;
+    left:220px;
+    border-radius:10px;
+}
+#section-4>div{
+    display:flex;
+    gap:10px;
+
+}
+#section-4>div>div{
+    border:0px solid black;    
+    height:200px;
+
+}
+#section-4>div>div:nth-child(1){
+    width:100%;
+    height:280px;
+}
+#section-4>div>div:nth-child(1)>img{
+    width:100%;
+    height:100%;
+    border-radius:10px
+   
+}
+#section-4>div>div:nth-child(2){
+    width:40%;
+    height:280px;
+    padding-left:20px;
+}
+#section-4>div>div:nth-child(2)>img{
+    width:100%;
+    height:100%;
+    border-radius:10px
+}
+#section-5{
+    border:0px solid black;     
+    width:72%; 
+    height:100px;   
+    position:absolute;
+    top:1500px;
+    left:220px;
+    border-radius:10px;
+    text-align:center;
+    line-height:1px;
+
+}
