@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hotelsearch.css">
+</head>
+<body>
+    <div id="container">
+        <div id="container1">
+            <div id="searchBar">
+                <input type="text" name="" id="search" placeholder="Going to">
+                <input type="date" name="" id="inDate" placeholder="Check-In">
+                <input type="date" name="" id="outDate" placeholder="Check-Out">
+                <input type="number" name="" id="person" placeholder="Travellers">
+                <button id="btn" onclick="search()">Search</button>
+            </div>
+
+            <div id="bar">
+                <div id="sidebar">
+                    <div class="mapouter"><div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" 
+                        marginheight="0" marginwidth="0" 
+                        src="https://maps.google.com/maps?width=310&amp;height=150&amp;
+                        hl=en&amp;q=kolkata&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                   </iframe><a href="https://mcpepro.com/">MCPE</a></div>
+                   <style>.mapouter{position:relative;text-align:right;width:310px;height:150px;}
+                   .gmap_canvas {overflow:hidden;background:none!important;width:310px;height:150px;
+                   }.gmap_iframe {width:310px!important;height:150px!important;}</style></div>
+               <hr>
+               <h2>Search by property name</h2>
+               <input type="text" name="" id="searchbyProperty" placeholder="e.g. Best Western">
+               <hr>
+               <h1>Filter by</h1>
+               <h2>Popular filters</h2>
+               <input type="checkbox" id="f1" name="" value="">
+               <label for="f1">Breakfast included</label><br>
+               <input type="checkbox" id="f2" name="" value="">
+               <label for="f2">Spa</label><br>
+               <input type="checkbox" id="f3" name="" value="">
+               <label for="f3">Ryokan</label><br>
+               <input type="checkbox" id="f4" name="" value="">
+               <label for="f4">Hostel/Backpacker accommodation</label><br>
+               <input type="checkbox" id="f5" name="" value="">
+               <label for="f5">Hot tub</label>
+               <hr>
+               <div id="price">
+                   <h2>Price per night</h2>
+                   <input type="checkbox" id="p1" name="" value="" onclick="sortByPrice()">
+                   <label for="p1">Less than Rs2,000</label><br>
+                   <input type="checkbox" id="p2" name="" value="2000">
+                   <label for="p2">Rs2,000 to Rs4,000</label><br>
+                   <input type="checkbox" id="p3" name="" value="4000" onclick="sortByPrice()">
+                   <label for="p3">Rs4,000 to Rs8,000</label><br>
+                   <input type="checkbox" id="p4" name="" value="8000">
+                   <label for="p4">Rs8,000 to Rs11,000</label><br>
+                   <input type="checkbox" id="p5" name="" value="11000" onclick="sortByPrice()">
+                   <label for="p5">Greater than Rs11,000</label>
+                </div>
+                <hr>
+                <div id="rate">
+                     <h2>Guest rating</h2>
+                     <input type="radio" id="r1" name="" value="">
+                    <label for="r1">Any</label><br>
+                    <input type="radio" id="r2" name="" value="">
+                    <label for="r2">Wonderful 4.5+</label><br>
+                    <input type="radio" id="r3" name="" value="">
+                    <label for="r3">Very good 4+</label><br>
+                    <input type="radio" id="r4" name="" value="">
+                    <label for="r4">Good 3.5+</label>
+                </div>
+                <hr>
+                <div id="byRating">
+                     <h2>Property class</h2>
+                     <button onclick="sortByR1()" class="b1">1⭐</button>
+                     <button onclick="sortByR2()" class="b1">2⭐</button>
+                     <button onclick="sortByR3()" class="b1">3⭐</button>
+                     <button onclick="sortByR4()" class="b1">4⭐</button>
+                     <button onclick="sortByR5()" class="b1">5⭐</button>
+                </div>
+                <hr>
+                <div>
+                     <h2>Payment type</h2>
+                     <input type="checkbox" id="pt1" name="" value="">
+                     <label for="pt1">Fully refundable</label><br>
+                     <input type="checkbox" id="pt2" name="" value="">
+                     <label for="pt2">Reserve now, pay later</label>
+                </div>
+                <hr>
+                <div>
+                    <h2>Property type</h2> 
+                    <input type="checkbox" id="pro_t1" name="" value="">
+                     <label for="pro_t1">Hotel resort</label><br>
+                     <input type="checkbox" id="pro_t2" name="" value="">
+                     <label for="pro_t2">Villa</label><br>
+                     <input type="checkbox" id="pro_t3" name="" value="">
+                     <label for="pro_t3">Hotel</label>
+                </div>
+                <hr>
+                <div>
+                     <h2>Popular locations</h2>
+                     <input type="radio" id="pl1" name="" value="">
+                    <label for="pl1">Bogmallo Beach</label><br>
+                    <input type="radio" id="pl2" name="" value="">
+                    <label for="pl2">Baina Beach</label><br>
+                    <input type="radio" id="pl3" name="" value="">
+                    <label for="pl3">Heart Shape Lake</label><br>
+                    <input type="radio" id="pl4" name="" value="">
+                    <label for="pl3">Casino Pearl</label><br>
+                    <input type="radio" id="pl5" name="" value="">
+                    <label for="pl3">Indian Naval Aviation Museum</label>
+                </div>
+                <hr>
+                <div>
+                     <h2>Meal plans available</h2>
+                     <input type="checkbox" id="mp1" name="" value="">
+                     <label for="mp1">Breakfast included</label><br>
+                     <input type="checkbox" id="mp2" name="" value="">
+                     <label for="mp2">Lunch included</label><br>
+                     <input type="checkbox" id="mp3" name="" value="">
+                     <label for="mp3">Dinner included</label>
+                </div>
+                <hr>
+                <div>
+                     <h2>Amenities</h2>
+                     <input type="checkbox" id="a1" name="" value="">
+                     <label for="am1">Spa</label><br>
+                     <input type="checkbox" id="a2" name="" value="">
+                     <label for="am1">Parking</label><br>
+                     <input type="checkbox" id="a3" name="" value="">
+                     <label for="am3">Electric car charging station</label>
+                </div>
+                <hr>
+               <div id="rewards">
+                <h2>Expedia Rewards</h2>
+                <input type="checkbox" id="rw1" name="" value="">
+               <label for="rw1">VIP Access properties</label><br>
+               <input type="checkbox" id="rw2" name="" value="">
+               <label for="rw2">Member Prices</label>
+               </div>
+               <hr>
+           <div>
+                <h2>Accessibility</h2>
+                <input type="checkbox" id="acs1" name="" value="">
+                <label for="ac1">Wheelchair-accessible parking</label><br>
+                <input type="checkbox" id="acs2" name="" value="">
+                <label for="ac2">Lift</label><br>
+                <input type="checkbox" id="acs3" name="" value="">
+                <label for="ac3">Accessible bathroom</label><br>
+                <input type="checkbox" id="acs4" name="" value="">
+                <label for="ac4">Roll-in shower</label><br>
+                <input type="checkbox" id="acs5" name="" value="">
+                <label for="ac5">In-room accessibility</label><br>
+                <input type="checkbox" id="acs6" name="" value="">
+                <label for="ac6">Service animals allowed</label><br>
+                <input type="checkbox" id="acs7" name="" value="">
+                <label for="ac7">Stair-free path to entrance</label><br>
+                <input type="checkbox" id="acs8" name="" value="">
+                <label for="ac8">Sign language-capable staff</label><br>
+           </div>
+           <hr>
+ 
+           <div>
+                <h2>Traveller experience</h2>
+                <input type="checkbox" id="te1" name="" value="">
+                <label for="te1">LGBTQ welcoming</label>
+                <p>See properties that pledge to make all guests feel safe, welcome and respected.</p>
+                <input type="checkbox" id="te2" name="" value="">
+                <label for="te2">Business-friendly</label><br>
+                <p>See properties with amenities to help you work comfortably, like WiFi and breakfast.</p>
+                <input type="checkbox" id="te3" name="" value="">
+                <label for="te3">Family-friendly</label>
+                <p>See properties that include family essentials like in-room conveniences and activities for the kids.</p><br>
+           </div>
+               </div>
+                <div id="middlebar">
+                    <div class="up_mid">
+                        <div>
+                            <p>1,993 properties</p>
+                            <p>See how we pick our recommended properties</p>
+                        </div>
+                        <div>
+                            <select name="Sorted" id="sort" onchange="sort()">
+                                <option value=""> Sort by Recommended</option>
+                                <option value="lth">Price Low to High</option>
+                                <option value="htl">Price High to Low</option>
+                                <option value="">Distance from Airport</option>
+                                <option value="">Guest rating + our choices</option>
+                                <option value="">Property class</option>
+                           </select>
+                        </div>
+                    </div>
+                    <div id="hotel"></div>
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <img src="https://tpc.googlesyndication.com/simgad/17447823249981941085?" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./hotelsearch.js"></script>
