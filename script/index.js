@@ -23,3 +23,11 @@ btn.addEventListener('click',function(){
 
    
 })
+let div_image1=document.getElementById('update')
+div_image1.addEventListener('click',function(){
+    window.location.href='home3.html'
+})
+let div_image2=document.getElementById('update')
+div_image2.addEventListener('click',function(){
+    window.location.href='home3.html'
+})
