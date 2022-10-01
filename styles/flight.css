@@ -1,9 +1,7 @@
 
 #top{
-    margin-top: 20px;
-    margin-left: 15px;
-
     border: 0px solid red;
+    padding-top: 70px;
 }
 .top11{
     border: 0px;
@@ -61,11 +59,13 @@
     background-color: rgb(37, 37, 150);
 }
 #bottom{
+    margin-bottom: -500px;
     display: flex;
     margin-top: 30px;
     border: 0px solid teal;
     height: 1000px;
     background-color:rgb(241, 238, 238)
+    
     
 }
 #bt1{
