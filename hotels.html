@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hotels.css">
+</head>
+<body>
+    <!-- for navbar -->
+    <div id="navbar"></div>
+
+    <div id="container">
+        <div class="container1">
+            <div id="sap"><a href="./hotels.html">See all properties</a></div>
+            <div id="roomDetails"></div>
+            <div id="imagebar">
+                <a href=""><h3>Overview</h3></a>
+                <a href=""><h3>Rooms</h3></a>
+                <a href=""><h3>Location</h3></a>
+                <a href=""><h3>Amenities</h3></a>
+                <a href=""><h3>Policies</h3></a>
+                <a href=""><h3>Reviews</h3></a>
+                <button id="bookRoom" onclick="bookingBtn()">Reserve a room</button>
+           </div>
+           <div id="map">
+                 <!-- Google Map Copied Code -->
+                 <div class="mapouter"><div class="gmap_canvas">
+                  <iframe class="gmap_iframe" frameborder="0" scrolling="no" 
+                  marginheight="0" marginwidth="0" 
+                  src="https://maps.google.com/maps?width=310&amp;height=150&amp;
+                  hl=en&amp;q=kolkata&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+             </iframe><a href="https://mcpepro.com/">MCPE</a></div>
+             <style>.mapouter{position:relative;text-align:right;width:310px;height:150px;}
+             .gmap_canvas {overflow:hidden;background:none!important;width:310px;height:150px;
+             }.gmap_iframe {width:310px!important;height:150px!important;}</style></div>
+           </div>
+           <h4>Popular Amenities</h4>
+           <div id="features">
+            <div>
+                <div id="x1">Free Wifi</div>
+                <div id="x2">Spa</div>
+                <div id="x3">Air conditioning</div>
+            </div>
+            <div>
+                <div id="x4">Laundry</div>
+                <div id="x5">Parking</div>
+                <div id="x6">Pool</div>
+            </div>
+           </div>
+           <h1>Choose your room</h1>
+           <div id="fillRoom">
+            <input type="date" name="" id="inDate">
+            <input type="date" name="" id="outDate">
+            <input type="number" name="" id="room" placeholder="Total Room">
+            <input type="number" name="" id="person" placeholder="Travellers">
+            <button id="btn" onclick="bookRoom()">Book Room</button>
+            
+       </div>
+       <div id="addForRef"></div>
+        </div>
+        <div class="container2">
+            <img src="https://tpc.googlesyndication.com/simgad/17447823249981941085?" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./hotels.js"></script>
