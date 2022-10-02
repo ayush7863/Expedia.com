@@ -8,6 +8,25 @@ things.addEventListener("click",function(){
   window.location.href="things_to_do.html"
 })
 
+let btnone=document.getElementById("btnone");
+let btntwo=document.getElementById("btntwo");
+
+btnone.addEventListener("click",function(){
+  window.location.href="loginpage.html"
+})
+
+btntwo.addEventListener("click",function(){
+  window.location.href="createaccount.html"
+})
+
+
+
+
+
+
+
+
+
 
 
 import footer from '../components/footer.js'
