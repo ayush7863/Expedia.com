@@ -1,6 +1,23 @@
 // import console from "console";
 import navbar from "../components/signnavbar.js";
 
+
+let pfour=document.getElementById("pfour");
+pfour.addEventListener("click",function(){
+    window.location.href='createaccount.html'
+})
+
+let forget=document.getElementById("forget");
+forget.addEventListener("click",function(){
+    window.location.href='forgetpage.html'
+})
+
+
+
+
+
+
+
 let navbar_div=document.getElementById("aknavbar")
 navbar_div.innerHTML=navbar()
 
