@@ -3,7 +3,7 @@
     width:72%;
     height:280px;    
     position:absolute;
-    top:100px;  
+    top:600px;  
     left:220px;   
     display:flex;
     gap:10px;
@@ -63,7 +63,7 @@
     width:72%;
     height:400px;
     position:absolute;
-    top:400px;
+    top:900px;
     left:220px;
     background:url('https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg') no-repeat center center/cover;
     border-radius:16px;
@@ -100,7 +100,7 @@
     width:72%;
     height:200px;
     position:absolute;
-    top:900px;
+    top:1400px;
     left:220px;
     border-radius:10px;
 }
@@ -142,7 +142,7 @@
     width:72%;
     height:280px;
     position:absolute;
-    top:1200px;
+    top:1700px;
     left:220px;
     border-radius:10px;
 }
@@ -181,7 +181,7 @@
     width:72%; 
     height:100px;   
     position:absolute;
-    top:1500px;
+    top:2000px;
     left:220px;
     border-radius:10px;
     text-align:center;
