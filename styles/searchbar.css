@@ -147,3 +147,17 @@
   .date:focus {
     border-color: #005aeb;
   }
+  #up{
+    border:0px solid black;
+    
+  }
+  #up>button{
+    background-color: #005aeb;
+    color: #fff;
+    width: 200px;
+    align-self: center;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
