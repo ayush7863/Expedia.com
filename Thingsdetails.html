@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Thingsdetails.css">
+</head>
+<body>
+    <h1>Things to do</h1>
+    <!-- <div id="maindiv">
+        <img src="https://tpc.googlesyndication.com/simgad/9833873038009145452?" alt="">
+        <div id="container"></div>
+    </div> -->
+    <div id="bckground">
+        <div id="filterbody">
+            <div id="filterpart">
+                <div id="searchsidebar">
+                    <h2>Search for an activity</h2>
+                    <input type="text" id="query" placeholder="     Enter a Keyword" onclick="searchplace()">
+                </div>
+                <h2>Filter by</h2>
+                <h3>Cleaning and safety practices</h3>
+                <div>
+                    <div></div>
+                    <div>
+                        <p class="p10"><input type="checkbox">    Enhanced cleaning</p>
+                        <p id="p11">Activity suppliers taking additional<br> steps to clean and sanitise</p>
+                    </div>
+                </div>
+                <h2>Traveller rating</h2>
+                <p class="p10"><input id="random" class="checklarge" type="checkbox">    Any</p>
+                <p class="p10"><input id="great" class="checklarge" type="checkbox">    Wonderful 4.5+</p>
+                <p class="p10"><input id="middle" class="checklarge" type="checkbox">    Very good 4+</p>
+                <p class="p10"><input id="bottom" class="checklarge" type="checkbox">    Good 3.5+</p>
+                <h2>Recommendations</h2>
+                <p class="p10"><input class="checklarge" type="checkbox">    Free cancellation</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    Deals</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    Family-friendly</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    New on Expedia</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    Selective hotel pickup</p>
+                <h2>Start time</h2>
+                <p class="p10"><input class="checklarge" type="checkbox">    6:00 - 12:00 (morning)</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    12:00 - 17:00 (afternoon)</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    17:00 - 0:00 (evening)</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    Any time</p>
+                <h2>Duration</h2>
+                <p class="p10"><input class="checklarge" type="checkbox">    Less than 1 hour</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    1 to 4 hours</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    4 hours to 1 day</p>
+                <p class="p10"><input class="checklarge" type="checkbox">    More than 1 day</p>
+                
+                <button onclick="sortLH()">Rating: L to H</button>
+                <button onclick="sortLH()">Rating: H to L</button>
+            </div>
+            <div id="bodypart">
+                <h1>All things to do</h1>
+                <div id="multiboxes">
+                    <div>
+                        <h3>Attractions</h3>
+                        <p class="down">1 things to do</p>
+                    </div>
+                    <div>
+                        <h3>Classes &<br> workshops</h3>
+                        <p class="upper">1 things to do</p>
+                    </div>
+                    <div>
+                        <h3>Private &<br> costom tours</h3>
+                        <p class="upper">4 things to do</p>
+                    </div>
+                    <div>
+                        <h3>History &<br> Culture</h3>
+                        <p class="upper">2 things to do</p>
+                    </div>
+                    <div>
+                        <h3>Tours & day trips</h3>
+                        <p class="down">4 things to do</p>
+                    </div>
+                    <div>
+                        <h3>Air, helicopter &<br> ballon tours</h3>
+                        <p class="upper">0 things to do</p>
+                    </div>
+                    <div>
+                        <h3>Theme parks</h3>
+                        <p class="down">0 things to do</p>
+                    </div>
+                </div>
+                <div id="middlepart">
+                    <p>See how we pick our recommended activities</p>
+                    <select id="department">
+                        <option value="">Sort by<br> Recommended</option>
+                        <option onclick="sortLH()" value="Low">Price (Low to High)</option>
+                        <option onclick="sortLH()" value="High">Price (High to Low)</option>
+                    </select>
+                </div>
+                <div id="count">
+                    <p>Showing 30 of 30 things to do</p>
+                </div>
+                <div id="travelPhotos"></div>
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt=""> -->
+            </div>
+        </div>
+        <div id="center">
+            <button><a href="./things_to_do.html">Show Less</a></button>
+        </div>
+
+    </div>
+    
+    
+    
+    
+</body>
+</html>
+
+<script src="./script/Thingsdetails.js"></script>
