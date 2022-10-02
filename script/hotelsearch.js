@@ -146,8 +146,9 @@ hotelData.map(function(el,i,arr){
 });
 }
 //sort function 
+
 function sort(){
-  let select = document.getElementById("sort").value;
+  let select = document.getElementById("sortm").value;
   if(select=="htl"){
     hotelData.sort(function(a,b){
       return b.price-a.price;
@@ -161,6 +162,10 @@ function sort(){
       display( hotelData);
   }
 }
+let sortm=document.getElementById("sortm");
+sortm.addEventListener("change",function(){
+  sort()
+})
 
 //sort by rating 
 function sortByR3(){
