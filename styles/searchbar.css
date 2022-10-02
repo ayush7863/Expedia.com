@@ -4,18 +4,18 @@
     font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;
   }
-  body{
-    margin-top: -300px;
-  }
+  
   .table_display {
-    width: 80%;
+    border:1px solid black;    
     height: auto;
     background-color: #fff;
-    margin: auto;
+    position:absolute;
+    top:100px;
+    left:370px;
     align-self: center;
-    margin-top: 70px;
+    
     border-radius: 5px;
-    box-shadow: 2px 5px 20px rgba(24, 24, 24, 0.74);
+   
   }
   
   #stays-booking {

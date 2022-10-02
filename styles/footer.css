@@ -1,31 +1,37 @@
 footer{
     border-bottom:1px solid black;
     width:74%;
-    height:350px;
+    height:270px;
     position:absolute;
-    top:2100px;
+    top:1980px;
     left:220px;
     
 }
 footer>#section-6{
-    display:flex;
+    display:grid;
     grid-template-columns:repeat(5,1fr);
     gap:10px;
 }
 footer>#section-6>div{
     border:0px solid black;
     width:100%;
-    height:380px;
+    height:260px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
     
     
 }
 footer>#section-6>div>h5>a{
     text-decoration:none; 
     color:blue;
+    padding-bottom:10px;
+    
 
 }
 footer>#section-6>div:nth-child(1)>img{
-    padding-top:18px;
+    padding-top:1px;
+    width:190px;
 
 }
 #section-7{
@@ -33,7 +39,7 @@ footer>#section-6>div:nth-child(1)>img{
     width:74%;
     height:200px;
     position:absolute;
-    top:2470px;
+    top:2270px;
     left:220px;
     text-align:center;
 
@@ -41,6 +47,7 @@ footer>#section-6>div:nth-child(1)>img{
 #section-7>div>img{
     width:300px;
     height:100px;
+    margin:auto;
 
 }
 #anchor:hover{

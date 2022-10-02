@@ -41,6 +41,7 @@ function footer(){
                 
             </div>
         </div>
+        
     </footer>
     <div id="section-7">
         <div><img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"/></div>

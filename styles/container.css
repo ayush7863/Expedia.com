@@ -3,7 +3,7 @@
     width:72%;
     height:280px;    
     position:absolute;
-    top:600px;  
+    top:500px;  
     left:220px;   
     display:flex;
     gap:10px;
@@ -33,11 +33,13 @@
     width:90px;
     height:40px;
     margin-right: 10px;
+   border:1px solid black;
 }
 #phone{
     width:130px;
     height:34px;
     margin-right: 10px;
+    border:1px solid black;
 }
 #btn-1{
     width:150px;
@@ -50,9 +52,14 @@
 
 #section-1>#div-2>h2{
     line-height:0px;
+    padding-top:10px;
+
+    
+
 }
 #section-1>#div-2>.para{
     font-size:13px;
+    padding-top:20px;
 }
 #btn-2>a{
     color:white;
@@ -63,7 +70,7 @@
     width:72%;
     height:400px;
     position:absolute;
-    top:900px;
+    top:850px;
     left:220px;
     background:url('https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg') no-repeat center center/cover;
     border-radius:16px;
@@ -100,7 +107,7 @@
     width:72%;
     height:200px;
     position:absolute;
-    top:1400px;
+    top:1300px;
     left:220px;
     border-radius:10px;
 }
@@ -142,7 +149,7 @@
     width:72%;
     height:280px;
     position:absolute;
-    top:1700px;
+    top:1600px;
     left:220px;
     border-radius:10px;
 }
@@ -181,11 +188,11 @@
     width:72%; 
     height:100px;   
     position:absolute;
-    top:2000px;
+    top:1900px;
     left:220px;
     border-radius:10px;
     text-align:center;
-    line-height:1px;
+    line-height:20px;
 
 }
 
