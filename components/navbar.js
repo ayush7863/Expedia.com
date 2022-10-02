@@ -60,7 +60,7 @@ function navbar(){
           <li>
             <a href="#"><i class="fa-solid fa-bell"></i> </a>
           </li>
-          <li><a href="#">Sign in </a></li>
+          <li><a href="#" id="mybtn">Sign in </a></li>
         </ul>
       </div>`
 }

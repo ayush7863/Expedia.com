@@ -1,0 +1,49 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+img{
+    width: 20%;
+    height: 30px;
+}
+#aknavbar{
+    display: flex;
+    justify-content: center;
+}
+
+#email{
+    height: 43px;
+    /* background-color: aqua; */
+    /* margin: auto; */
+
+   
+    border-style: ridge;
+    margin-bottom: 28px;
+    border-radius: 9px;
+}
+#submit{
+    height: 47px;
+    /* background-color: aqua; */
+    /* margin: auto; */
+    border-style: none;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    font-size: 17px;
+    color: black;
+    background-color: rgb(35, 140, 239);
+    color: aliceblue;
+}
+#pone{
+    font-family:  sans-serif;
+
+}
+    
+h1{
+    font-family:  sans-serif;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}

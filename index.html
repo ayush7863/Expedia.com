@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles/navbar.css" />
   <link rel="stylesheet" href="./styles/container.css" />
   <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/akashsign.css">
   <!-- searchbar links -->
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -33,6 +34,35 @@
 </head>
 
 <body>
+  <!-- Akash Code  -->
+  <div id="myModal" class="modal">
+
+        
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="pone">Save an average of 15% on thousands of hotels when you're signed in</p>
+
+
+      <div id="innerdiv">
+        <button id="btnone"><a href="../busy-cough-2191/loginpage.html" target="_blank">Sign in</a> </button>
+        <button id="btntwo"><a href="../busy-cough-2191/createaccount.html" target="_blank" style="color: black;">Create a free account</a> </button>
+      </div>
+
+      <div>
+        <p id="ptwo">List of Favorites</p>
+        <p id="pthree">Expedia Rewards</p>
+      </div>
+      <hr>
+
+      <div>
+        <p id="pfour">Feedback</p>
+      </div>
+      
+    </div>
+    
+  
+</div> 
+<!-- Akash code end -->
   <nav id="navbar">
   </nav>
   <!-- searchbar -->
@@ -580,6 +610,35 @@
 <script>
   AOS.init();
 </script>
+<script>
+  var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("mybtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
+<!--akash pop up scriipt file-->
+
+
+
 <script type="module" src="./script/index.js"></script>

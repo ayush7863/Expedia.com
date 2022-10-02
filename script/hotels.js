@@ -2,6 +2,16 @@ import navbar from "../components/navbar.js";
 let nav_div=document.getElementById("navbar");
 nav_div.innerHTML=navbar();
 
+let bookRoom=document.querySelector("#bookRoom");
+bookRoom.addEventListener("click",function(){
+     window.location.href="./thingsPayment.html"
+})
+
+let btn=document.querySelector("#btn");
+btn.addEventListener("click",function(){
+     window.location.href="./thingsPayment.html"
+})
+
 var cartData=JSON.parse(localStorage.getItem("cart"))||[];
      console.log(cartData);
      let url1="https://media-cdn.tripadvisor.com/media/photo-s/03/a4/33/51/moonrise-hotel.jpg";
