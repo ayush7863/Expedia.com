@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #container{
-    height: 1000px;
+    height: auto;
     border: 2px solid red;
     width: 100%;
     margin: auto;
@@ -15,17 +15,15 @@ body{
 #contL{
     width: 60%;
     border: 0px solid green;
-    height: 700px;
-    background-color: white;
+    height: auto;
     margin-left: 60px;
     margin-right: 20px;
-    margin-top: 50px;
+    margin-top: 00px;
 }
 #contR{
     width: 30%;
     border: 0px solid green;
-    height: 400px;
-    background-color: white;
+    height: auto;
     margin-right: 20px;
     margin-top: 50px;
 
@@ -46,25 +44,34 @@ body{
 #contL>div{
     margin-left: 20px;
 }
-#i200{
-    display: flex;
-    border: 2px solid green;
+#contL>div>p{
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 20px;
 }
-#i200>div:nth-child(1){
-    border: 2px solid black;
-    width: 15%;   
+
+#contL>div>p>span{
+    color: grey;
+    font-size: 20px;
 }
-.c201{
-    padding-right: 90px;
-    height: 50px;
-    border-radius: 5px; 
-    background-color: rgb(234, 234, 234);
+#left1,#left2,#left3,#left4,#left5{
+    width: 90%;
+    border: 0px solid green;
+    height: auto;
+    background-color: white;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
-#i200>div:nth-child(2){
-    border: 2px solid black;
-    width: 25%;   
+
+.p1{
+    color: green;
 }
-#i200>div:nth-child(3){
-    border: 2px solid black;
-    width: 15%;   
+#left2>img{
+    width: 30%;
+
 }
+
