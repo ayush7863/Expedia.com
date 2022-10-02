@@ -81,7 +81,7 @@
             "
           >
             <i class="fas fa-hotel"></i>
-            <p>Stays</p>
+            <p id="l1">Stays</p>
           </a>
         </li>
         <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2  }">
@@ -610,6 +610,7 @@
 <script>
   AOS.init();
 </script>
+
 <script>
   var modal = document.getElementById("myModal");
 
@@ -635,10 +636,9 @@ window.onclick = function(event) {
   }
 }
 </script>
+
 </body>
 </html>
 <!--akash pop up scriipt file-->
-
-
 
 <script type="module" src="./script/index.js"></script>
