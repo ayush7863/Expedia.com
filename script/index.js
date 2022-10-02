@@ -3,8 +3,10 @@ let nav_div=document.getElementById("navbar")
 nav_div.innerHTML=navbar()
 
 
-
-
+let things=document.getElementById("things")
+things.addEventListener("click",function(){
+  window.location.href="things_to_do.html"
+})
 
 
 
