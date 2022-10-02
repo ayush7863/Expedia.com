@@ -1,3 +1,8 @@
+import navbar from "../components/navbar.js";
+let nav_div=document.getElementById("navbar");
+nav_div.innerHTML=navbar();
+
+
 function slidshow(){
     
     let arr=["https://images.thrillophilia.com/image/upload/s--1W1S7cV0--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/048/579/original/1552897506_mahabaleshwar_places_feature.jpg.jpg?1552897506","https://wallpapercave.com/wp/fROEr8f.jpg","https://images.thrillophilia.com/image/upload/s--ffVDhkoA--/c_fill,f_auto,fl_strip_profile,h_775,q_auto,w_1600/v1/images/photos/000/013/736/original/1463259871_ladakh.jpg.jpg?1463259871"]
@@ -95,10 +100,19 @@ function dummydata(data){
         p2.innerHTML="per adult*";
         p2.id="per";
 
+        let buy=document.createElement('button');
+        buy.innerText="Buy"
+        buy.id="buy"
+        buy.addEventListener("click",function(){
+            window.location.href="./thingsPayment.html"
+        })
+
         let p1=document.createElement('p');
         p1.innerHTML="*Get a lower price by selecting multiple adult tickets";
 
-        div.append(img,p_name,p,p_rating,price,p2,p1);
+        
+
+        div.append(img,p_name,p,p_rating,price,p2,buy,p1);
 
         append_travel.append(div);
     })

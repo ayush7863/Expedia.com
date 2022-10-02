@@ -1,3 +1,13 @@
+#navbar{
+    margin-top: -23px;
+}
+#top1{
+    padding-top: 100px;
+    margin-left: 40px;
+}
+#father{
+    border: 0px solid teal;
+}
 #container{
     width: 100%;
     display: flex;
@@ -104,10 +114,12 @@
 }
 
 #multiboxes{
+    margin-top: 10px;
+    margin-bottom: -20px;
     position:relative; 
     left:100px; 
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 10px;
     width: 80%;
 }
@@ -201,4 +213,13 @@
 #per{
     position:relative; 
     bottom:20px;
+}
+#buy{
+    padding: 20px 45% 20px 40%;
+    margin-right: 30px;
+    background-color: blue;
+    border: 0px;
+    outline: 0px;
+    color: white;
+    font-size: 20px;
 }
