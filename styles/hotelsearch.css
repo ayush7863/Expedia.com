@@ -3,6 +3,8 @@ body{
     margin: 0;
 }
 #container{
+  border: 0px solid teal;
+  padding-top: 100px;
     width: 90%;
     height: 5200px;
     display: flex;
@@ -26,6 +28,7 @@ body{
     width: 98%;
     margin: 10px;
     gap: 15px;
+    border: 0px solid black;
   }
   #search,#inDate,#outDate,#person{
     height: 50px;
@@ -37,6 +40,7 @@ body{
     padding-left: 55px;
     background: url("https://image.shutterstock.com/image-vector/pin-map-place-location-icon-260nw-756369496.jpg") no-repeat left;
     background-size: 40px;
+    border: 1px solid black;
   }
   #inDate,#outDate,#person{
     border: 1px solid grey;

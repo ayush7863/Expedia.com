@@ -1,3 +1,7 @@
+import navbar from "../components/navbar.js";
+import footer from "../components/footer.js";
+let nav_div=document.getElementById("navbar");
+nav_div.innerHTML=navbar();
 
 //hotel data 
 function hotel(u,n,r,p,c,pt){
@@ -291,7 +295,7 @@ function searchByProperty(){
 }
 
 function addToCart(el){
-  cartData=[];
+ let cartData=[];
   cartData.push(el);
   localStorage.setItem("cart",JSON.stringify(cartData));
   alert("Book The Room");
