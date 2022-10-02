@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  body{
+    margin-top: -300px;
+  }
+  .table_display {
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    align-self: center;
+    margin-top: 70px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 20px rgba(24, 24, 24, 0.74);
+  }
+  
+  #stays-booking {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .no-of-people {
+    align-self: flex-end;
+    font-size: 15px;
+    color: #005aeb;
+    cursor: pointer;
+  }
+  
+  .place-and-date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .place-search {
+    width: 50%;
+    outline: none;
+    height: 40px;
+    border-radius: 10px !important;
+    border: 1px solid #465280;
+    padding-left: 20px;
+  }
+  
+  .plane-search {
+    width: 24%;
+    outline: none;
+    height: 40px;
+    border-radius: 10px !important;
+    border: 1px solid #465280;
+    padding-left: 20px;
+  }
+  .place-search:focus {
+    border: 2px solid #005aeb;
+  }
+  
+  .add-people-modal {
+    position: absolute;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: #001959;
+    background-color: #ffffff;
+    margin-top: 25px;
+    align-self: flex-end;
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 5px 10px rgb(51, 51, 51);
+  }
+  .nums-title {
+    font-size: 18px;
+    color: #001959;
+    font-weight: 700;
+  }
+  .room-no {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .adults,
+  .children {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+  }
+  .person-cat {
+    font-size: 15px;
+    font-weight: 400;
+    color: #001959;
+  }
+  
+  .numbers {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+  }
+  
+  .done {
+    background-color: #005aeb;
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+    padding: 7px;
+  }
+  
+  .done:hover {
+    background-color: #005aebcb;
+    color: #fff;
+  }
+  
+  .add-flight-car {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 2%;
+  }
+  
+  .search-btn {
+    background-color: #005aeb;
+    color: #fff;
+    width: 200px;
+    align-self: center;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  
+  .date {
+    border: 1px solid #465280;
+    padding-left: 10px;
+    border-radius: 7px;
+    outline: none;
+  }
+  
+  .date:focus {
+    border-color: #005aeb;
+  }
