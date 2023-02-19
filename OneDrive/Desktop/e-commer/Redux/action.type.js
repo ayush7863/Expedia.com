@@ -1,0 +1,9 @@
+
+
+export const ADD_PROFILE="ADD/PROFILE"
+export const DELETE_PROFILE="DELETE/PROFILE"
+export const UPDATE_PROFILE="UPDATE/PROFILE"
+export const GET_PROFILE="GET/PROFILE"
+
+export const REQUEST="LOADING/PROFILE"
+export const ERROR="ERROR/PROFILE"
