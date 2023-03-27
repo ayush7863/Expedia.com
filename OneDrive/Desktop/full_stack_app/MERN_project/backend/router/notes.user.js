@@ -69,4 +69,17 @@ notesRouter.delete("/delete/:noteID", async(req, res) => {
     }
 });
 
+notesRouter.patch("/update/:noteID", async(req, res) => {
+    const {noteID}=req.params
+    const payload=req.body
+    console.log(noteID)
+    try{
+        await NoteModel.findByIdAndUpdate({ _id:noteID },payload)
+        res.send("Update succesfully")
+    }
+    catch(error){
+        res.send("error",error)
+    }
+});
+
 module.exports = { notesRouter }

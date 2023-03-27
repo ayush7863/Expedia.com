@@ -5,7 +5,7 @@ const {userModel}=require("../model/model")
 var jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const {auth}=require("../middleware/auth");
-// const { NoteModel } = require('../model/notes');
+// Akash
 
 
 // registration 
@@ -62,9 +62,6 @@ userRouter.post("/login",async(req,res)=>{
     }
     
 })
-
-
-
 
 
 

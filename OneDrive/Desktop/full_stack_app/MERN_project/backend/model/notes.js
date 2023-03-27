@@ -9,3 +9,4 @@ const mongoose=require("mongoose")
 
 const NoteModel=mongoose.model("note",noteSchema)
 module.exports={ NoteModel }
+// Model.......
